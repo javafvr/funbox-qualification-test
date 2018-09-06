@@ -1,0 +1,34 @@
+mixin product-card(title, weight, descr, state)
+	if state
+		article.product-card(data-descr= descr)
+			.product-card__content
+				h3.title-3 Сказочное заморское яство
+				h1.title-1 Нямушка
+				h2.title-2 #{title}
+				.product-card__content__descr 			
+					if block 
+						block
+					else
+						10 порций
+			.bage.text-center 
+				p.bage__text #{weight}
+				p.bage__text--small кг
+		p.footer.text-center Чего сидишь? Порадуй котэ, 
+			a.buy купи.
+	else
+		article.product-card.product-card--disabled
+			.product-card__overlay
+			.product-card__content.product-card__content--disable
+				h3.title-3 Сказочное заморское яство
+				h1.title-1 Нямушка
+				h2.title-2 #{title}
+				.product-card__content__descr
+					if block 
+						block
+					else
+						10 порций
+			.bage.text-center 
+				p.bage__text #{weight}
+				p.bage__text--small кг
+		p.footer.footer--disabled.text-center Печалька, с курой закончился.
+
