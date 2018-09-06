@@ -131,8 +131,8 @@ gulp.task('svg', function() {
 
 gulp.task('copy:libs', function(callback) {
    
-    gulp.src('node_modules/jquery/dist/**/*.*')
-		.pipe(gulp.dest('./build/libs/jquery'));
+  //   gulp.src('node_modules/jquery/dist/**/*.*')
+		// .pipe(gulp.dest('./build/libs/jquery'));
 
 	gulp.src('node_modules/bootstrap-4-grid/css/**/*.*')
 		.pipe(gulp.dest('./build/libs/bootstrap-4-grid'))
