@@ -12,13 +12,13 @@ window.onload = function() {
 		function toggleState(e){
 
 			let productCard = getParent(e.target, '.product-card');
-			let slogan = productCard.getElementsByTagName('h3');
+			let slogan = productCard.getElementsByTagName('h5');
 
 			//Мышь навели
 			if (e.type=='mouseover') {
 				if (productCard.classList.contains('product-card--active')){
 					slogan[0].innerHTML = 'Котэ не одобряет?';
-					slogan[0].classList.add('title-3--active');
+					slogan[0].classList.add('title-5--active');
 				}
 			}
 			
@@ -30,7 +30,7 @@ window.onload = function() {
 			// Мышь убрали с элемента product-card
 			if (e.type=='mouseleave'){
 				slogan[0].innerHTML = 'Сказочное заморское яство';
-				slogan[0].classList.remove('title-3--active');
+				slogan[0].classList.remove('title-5--active');
 			}
 
 			// Мышь убрали с элемента product-card после клика
