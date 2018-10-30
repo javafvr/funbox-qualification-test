@@ -2,9 +2,9 @@ mixin product-card(title, weight, descr, state)
 	if state
 		article.product-card(data-descr= descr)
 			.product-card__content
-				h3.title-3 Сказочное заморское яство
-				h1.title-1 Нямушка
-				h2.title-2 #{title}
+				h5.title-5 Сказочное заморское яство
+				h3.title-3 Нямушка
+				h4.title-4 #{title}
 				.product-card__content__descr 			
 					if block 
 						block
@@ -19,9 +19,9 @@ mixin product-card(title, weight, descr, state)
 		article.product-card.product-card--disabled
 			.product-card__overlay
 			.product-card__content.product-card__content--disable
-				h3.title-3 Сказочное заморское яство
-				h1.title-1 Нямушка
-				h2.title-2 #{title}
+				h5.title-5 Сказочное заморское яство
+				h3.title-3 Нямушка
+				h4.title-4 #{title}
 				.product-card__content__descr
 					if block 
 						block
