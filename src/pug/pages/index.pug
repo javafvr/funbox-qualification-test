@@ -10,23 +10,24 @@ html(lang="en")
 	body.bg-overlay
 		include ../mixins/_product-card.pug
 		.container
-			.row
-				header.header
-					h1.title-1.text-center Ты сегодня покормил кота?
-			.row
-				.col-12.col-xl-4
-					+product-card('с фуа-гра', '0,5', 'Печень утки разварная с артишоками.', true)
-						p 10 порций 
-						p мышь в подарок
+			.wrapper.align-middle
+				.row
+					header.header
+						h1.title-1.text-center Ты сегодня покормил кота?
+				.row
+					.col-12.col-xl-4
+						+product-card('с фуа-гра', '0,5', 'Печень утки разварная с артишоками.', true)
+							p 10 порций 
+							p мышь в подарок
 
-				.col-md-6.col-xl-4
-					+product-card('с рыбой', '2','Головы щучьи с чесноком да свежайшая сёмгушка.', true)
-						p 40 порций 
-						p 2 мыши в подарок
-				.col-md-6.col-xl-4
-					+product-card('с курой', '5', 'Филе из цыплят с трюфелями в бульоне.', false)
-						p 100 порций 
-						p 5 мышей в подарок 
-						p заказчик доволен
+					.col-md-6.col-xl-4
+						+product-card('с рыбой', '2','Головы щучьи с чесноком да свежайшая сёмгушка.', true)
+							p 40 порций 
+							p 2 мыши в подарок
+					.col-md-6.col-xl-4
+						+product-card('с курой', '5', 'Филе из цыплят с трюфелями в бульоне.', false)
+							p 100 порций 
+							p 5 мышей в подарок 
+							p заказчик доволен
 		script(src="js/script.js")
 				
