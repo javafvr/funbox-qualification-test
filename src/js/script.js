@@ -19,8 +19,6 @@ window.onload = function() {
 				if (productCard.classList.contains('product-card--active')){
 					slogan[0].innerHTML = 'Котэ не одобряет?';
 					slogan[0].classList.add('title-3--active');
-					console.dir(slogan);
-
 				}
 			}
 			
@@ -80,7 +78,6 @@ window.onload = function() {
 		
 		// Переключалка описания карточки
 		function toggleDescr(productCard){
-			// console.log(getFooter(productCard));
 			if (productCard.classList.contains('product-card--active')){
 				getDescr(productCard).hidden = true;
 				getFooter(productCard).hidden = false;
