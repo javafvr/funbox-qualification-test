@@ -1,6 +1,6 @@
 mixin product-card(title, weight, descr, state)
 	if state
-		article.product-card(data-descr= descr)
+		article.product-card(data-descr= descr role="article")
 			.product-card__content
 				h5.title-5 Сказочное заморское яство
 				h3.title-3 Нямушка
@@ -13,7 +13,7 @@ mixin product-card(title, weight, descr, state)
 			.bage.text-center 
 				p.bage__text #{weight}
 				p.bage__text--small кг
-		p.footer.text-center Чего сидишь? Порадуй котэ, 
+		p.footer.text-center(role="contentinfo") Чего сидишь? Порадуй котэ, 
 			a.buy купи.
 	else
 		article.product-card.product-card--disabled
